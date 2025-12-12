@@ -1,0 +1,140 @@
+@define-color selected-text #8BE9FD;
+@define-color text #FFB86C;
+@define-color base #282a36;
+@define-color border #bd93f9;
+@define-color foreground #f8f8f2;
+@define-color background #282a36;
+@define-color input #44475A;
+@define-color selected-box #2F1F37;
+
+window {
+   background-color: transparent;
+   background-image: radial-gradient(circle at center,
+         rgba(0, 30, 73, 0.35) 0%,
+         rgba(0, 8, 23, 0.65) 60%,
+         rgba(0, 4, 12, 0.85) 100%);
+   backdrop-filter: blur(1.5px);
+   border: none;
+   border-width: 0;
+   border-color: transparent;
+   padding: 0;
+   /* outline: none;  */
+   box-shadow: none;
+ }
+
+ .search-container {
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+ /*
+ .box-wrapper {
+    background-color: alpha(@base, 0.98);
+    border: 5px solid @accent;
+    border-radius: 18px;
+    padding: 18px 22px;
+} */
+
+
+/* Stronger than a plain `.box-wrapper` rule */
+/*
+window .box-wrapper {
+    border-width: 5px;
+    border-style: solid;
+    border-color: @border;
+    background-color: alpha(@base, 0.98);
+    border-radius: 18px;
+    padding: 18px 22px;
+}
+*/
+
+
+window .box-wrapper {
+    border-radius: 18px;
+    border: 5px solid transparent;  /* thickness of the "border" */
+    padding: 18px 22px;
+
+    /* Two-layer background:
+     *  - first layer: inner fill (solid @base)
+     *  - second layer: outer gradient, becomes the border
+     */
+    background-image:
+        linear-gradient(@base, @base),
+        linear-gradient(165deg, #6272A4, #bd93f9, #bd93f9);
+
+    /* Tell GTK how to clip each layer:
+     *  - inner layer clips to padding-box (inside the border)
+     *  - outer gradient clips to border-box (full rounded box)
+     */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+
+#entry entry,
+.input {
+    background-color: rgba(68, 71, 90, 1.0);
+    color: @text;
+    border-radius: 12px;
+    padding: 12px 16px;
+
+    border: none;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+#entry * {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+#entry:selected {
+    color: @foreground;
+
+}
+
+
+
+/* === Result items: flat, slightly rounded box on hover/selected === */
+
+/* Row container (Walker uses 'child' as the row widget) */
+child {
+  padding: 2px 6px;              /* small gap inside the list */
+}
+
+/* The inner box that actually wraps the item content */
+child .item-box {
+  border-radius: 10px;           /* shape of the pill/box */
+  background: transparent;
+}
+
+/* Hover + selected state */
+child:hover .item-box,
+child:selected .item-box {
+  background-image: none;
+  background-color: alpha(@selected-box, 0.95);   /* Dracula-ish flat box */
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+/* Ensure text inside the item uses the right foreground color */
+child:hover .item-text,
+child:selected .item-text {
+  color: @foreground;
+}
+/* Hard reset: kill any stray background/halo around the search entry */
+window .box-wrapper #entry,
+window .box-wrapper #entry * {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+

@@ -1,0 +1,122 @@
+/* @define-color foreground #f8f8f2; 
+@define-color foreground #EBF389;
+@define-color background rgba (16, 20, 50, 0.0);
+@define-color accent #bd93f9;
+@define-color green #50fa7b;
+@define-color yellow #f1fa8c;
+@define-color red #ff5555;
+@define-color cyan #8be9fd;
+*/
+
+@define-color background-darker rgba(30, 31, 41, 230);
+@define-color background #282a36;
+@define-color selection #44475a;
+@define-color foreground #f8f8f2;
+@define-color comment #6272a4;
+@define-color cyan #8be9fd;
+@define-color green #50fa7b;
+@define-color orange #ffb86c;
+@define-color pink #ff79c6;
+@define-color purple #bd93f9;
+@define-color red #ff5555;
+@define-color yellow #f1fa8c;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Iosevka;
+    font-size: 11pt;
+    min-height: 0;
+}
+window#waybar {
+    opacity: 0.85;
+    background: @background-darker;
+    color: @foreground;
+    border-bottom: 2px solid @background;
+}
+#workspaces button {
+    padding: 0 10px;
+    background: @background;
+    color: @foreground;
+}
+#workspaces button:hover {
+}
+#workspaces button.focused,
+#workspaces button.active {
+}
+#workspaces button.urgent {
+}
+#taskbar button.active {
+}
+#clock {
+    padding: 0 4px;
+    background: @background;
+}
+
+/*
+*{
+  border: none;
+  font-size: 16px;
+  min-height: 0;
+}
+
+window#waybar {
+  color: @foreground;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+  color: @foreground;
+}
+
+#workspaces button:hover {
+  color: @foreground;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: @accent;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#mode {
+  color: @yellow;
+}
+
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#tray,
+#backlight,
+#temperature {
+}
+
+#pulseaudio.muted {
+  color: @yellow;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @green;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#network.disconnected {
+  color: @red;
+}
+
+#tray {
+}
+
+*/
