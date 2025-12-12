@@ -1,11 +1,11 @@
 @define-color selected-text #8BE9FD;
-@define-color text #FFB86C;
-@define-color base #282a36;
+@define-color text #6272A4;
+@define-color base #44475A;
 @define-color border #bd93f9;
 @define-color foreground #f8f8f2;
 @define-color background #282a36;
-@define-color input #44475A;
-@define-color selected-box #2F1F37;
+@define-color input #282a36;
+@define-color selected-box #282a36;
 
 window {
    background-color: transparent;
@@ -16,67 +16,32 @@ window {
    backdrop-filter: blur(1.5px);
    border: none;
    border-width: 0;
-   border-color: transparent;
+   border-color: @border;
    padding: 0;
    /* outline: none;  */
    box-shadow: none;
  }
 
  .search-container {
-    background: transparent;
+    background: @background;
     border: none;
     border-radius: 12px;
     padding: 12px 16px;
 }
 
- /*
- .box-wrapper {
-    background-color: alpha(@base, 0.98);
-    border: 5px solid @accent;
-    border-radius: 18px;
-    padding: 18px 22px;
-} */
-
-
-/* Stronger than a plain `.box-wrapper` rule */
-/*
-window .box-wrapper {
-    border-width: 5px;
-    border-style: solid;
-    border-color: @border;
-    background-color: alpha(@base, 0.98);
-    border-radius: 18px;
-    padding: 18px 22px;
-}
-*/
-
 
 window .box-wrapper {
     border-radius: 18px;
-    border: 5px solid transparent;  /* thickness of the "border" */
+    border: 0px solid @border;  /* thickness of the "border" */
     padding: 18px 22px;
-
-    /* Two-layer background:
-     *  - first layer: inner fill (solid @base)
-     *  - second layer: outer gradient, becomes the border
-     */
-    background-image:
-        linear-gradient(@base, @base),
-        linear-gradient(165deg, #6272A4, #bd93f9, #bd93f9);
-
-    /* Tell GTK how to clip each layer:
-     *  - inner layer clips to padding-box (inside the border)
-     *  - outer gradient clips to border-box (full rounded box)
-     */
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background: @base;
 }
 
 
 
 #entry entry,
 .input {
-    background-color: rgba(68, 71, 90, 1.0);
+    background-color: @input;
     color: @text;
     border-radius: 12px;
     padding: 12px 16px;
@@ -89,7 +54,7 @@ window .box-wrapper {
 
 
 #entry * {
-    background-color: transparent !important;
+    background-color: @base !important;
     background-image: none !important;
     box-shadow: none !important;
 }
@@ -110,14 +75,14 @@ child {
 /* The inner box that actually wraps the item content */
 child .item-box {
   border-radius: 10px;           /* shape of the pill/box */
-  background: transparent;
+  background: @base;
 }
 
 /* Hover + selected state */
 child:hover .item-box,
 child:selected .item-box {
   background-image: none;
-  background-color: alpha(@selected-box, 0.95);   /* Dracula-ish flat box */
+  background-color: @selected-box;   /* Dracula-ish flat box */
   border-radius: 12px;
   box-shadow: none;
 }
@@ -130,11 +95,10 @@ child:selected .item-text {
 /* Hard reset: kill any stray background/halo around the search entry */
 window .box-wrapper #entry,
 window .box-wrapper #entry * {
-    background: transparent;
-    background-color: transparent;
+    background: @input;
+    background-color: @input;
     background-image: none;
     box-shadow: none;
     border: none;
     outline: none;
 }
-

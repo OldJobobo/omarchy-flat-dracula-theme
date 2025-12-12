@@ -29,7 +29,6 @@
     min-height: 0;
 }
 window#waybar {
-    opacity: 0.85;
     background: @background-darker;
     color: @foreground;
     border-bottom: 2px solid @background;
