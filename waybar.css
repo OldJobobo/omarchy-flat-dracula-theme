@@ -1,13 +1,3 @@
-/* @define-color foreground #f8f8f2; 
-@define-color foreground #EBF389;
-@define-color background rgba (16, 20, 50, 0.0);
-@define-color accent #bd93f9;
-@define-color green #50fa7b;
-@define-color yellow #f1fa8c;
-@define-color red #ff5555;
-@define-color cyan #8be9fd;
-*/
-
 @define-color background-darker rgba(30, 31, 41, 230);
 @define-color background #282a36;
 @define-color selection #44475a;
@@ -24,98 +14,44 @@
 * {
     border: none;
     border-radius: 0;
+    /* IMPORTANT: no box-shadow here, or every module gets one */
+    box-shadow: none;
+
     font-family: Iosevka;
     font-size: 11pt;
     min-height: 0;
 }
+
+/* One single bar surface: background + shadow */
 window#waybar {
     background: @background-darker;
     color: @foreground;
-    border-bottom: 2px solid @background;
-}
-#workspaces button {
-    padding: 0 10px;
-    background: @background;
-    color: @foreground;
-}
-#workspaces button:hover {
-}
-#workspaces button.focused,
-#workspaces button.active {
-}
-#workspaces button.urgent {
-}
-#taskbar button.active {
-}
-#clock {
-    padding: 0 4px;
-    background: @background;
+
+
 }
 
-/*
-*{
-  border: none;
-  font-size: 16px;
-  min-height: 0;
-}
-
-window#waybar {
-  color: @foreground;
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
 }
 
 #workspaces {
+    background: transparent;
 }
 
 #workspaces button {
-  color: @foreground;
+    background: transparent;      
 }
 
-#workspaces button:hover {
-  color: @foreground;
-}
 
-#workspaces button.focused,
-#workspaces button.active {
-  color: @accent;
-}
 
 #workspaces button.urgent {
-  color: @red;
+    background: rgba(255, 85, 85, 0.35);
 }
 
-#mode {
-  color: @yellow;
-}
 
-#clock,
-#cpu,
-#memory,
-#network,
-#pulseaudio,
-#battery,
-#tray,
-#backlight,
-#temperature {
+#clock {
+    padding: 0 4px;
+    background: transparent;
 }
-
-#pulseaudio.muted {
-  color: @yellow;
-}
-
-#battery.charging,
-#battery.plugged {
-  color: @green;
-}
-
-#battery.critical:not(.charging) {
-  color: @red;
-}
-
-#network.disconnected {
-  color: @red;
-}
-
-#tray {
-}
-
-*/
