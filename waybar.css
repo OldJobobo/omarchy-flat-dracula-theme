@@ -14,7 +14,6 @@
 * {
     border: none;
     border-radius: 0;
-    /* IMPORTANT: no box-shadow here, or every module gets one */
     box-shadow: none;
 
     font-family: Iosevka;
@@ -22,7 +21,6 @@
     min-height: 0;
 }
 
-/* One single bar surface: background + shadow */
 window#waybar {
     background: @background-darker;
     color: @foreground;
