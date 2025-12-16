@@ -2,6 +2,8 @@
 
 Flat take on the Dracula palette for a Hyprland-based Wayland setup and common CLI tools. Includes matching wallpapers (`backgrounds/`) and a preview (`preview.png`).
 
+This exists because I wanted an authentic Dracula experience on Omarchy: other attempts felt off-spec or busy, so I built a version that stays true to the palette while keeping distractions low. The goal is to make it easy to lock in for long sessions—high contrast where it matters, soft edges where it does not, and readability that stays gentle on the eyes.
+
 ![Omarchy Flat Dracula Theme preview](preview.png)
 
 ## What’s included
