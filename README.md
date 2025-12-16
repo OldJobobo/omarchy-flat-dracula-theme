@@ -2,6 +2,8 @@
 
 Flat take on the Dracula palette for a Hyprland-based Wayland setup and common CLI tools. Includes matching wallpapers (`backgrounds/`) and a preview (`preview.png`).
 
+![Omarchy Flat Dracula Theme preview](preview.png)
+
 ## What’s included
 - Hyprland: dimmed inactive windows, zero borders, custom opacity rules (`hyprland.conf`)
 - Hyprlock colors for ring and text (`hyprlock.conf`)
