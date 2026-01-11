@@ -218,15 +218,15 @@
   },
   "mpris": {
     "format": "{player_icon} {dynamic}",
-    "format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
+    "format-paused": "{status_icon} {dynamic}",
     "max-length": 55,
     "interval": 1,
     "player-icons": {
-      "default": "⏸",
+      "default": "▶",
       "mpv": "🎵"
     },
     "status-icons": {
-      "paused": "▶"
+      "paused": "⏸"
     }
     // "ignored-players": ["firefox"]
   },

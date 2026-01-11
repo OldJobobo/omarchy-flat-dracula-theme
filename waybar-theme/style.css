@@ -20,7 +20,7 @@
 /* --- Global-Settings ---*/
 
 * {
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: 'JetBrainsMono Nerd Font Propo';
   font-size: 12px;
   font-weight: bold;
   min-height: 0px;
@@ -215,6 +215,9 @@ tooltip {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+#mpris.paused {
+    color: @text;
+}
 /* Specific Module */
 
 #tray > .passive {
@@ -285,7 +288,7 @@ tooltip label {
 
 @keyframes blink {
     to {
-        color: @highlight_med;
+        color: @text;
         
     }
 }
