@@ -126,7 +126,6 @@ tooltip {
   color: @text;
 }
 
-/* --- Gruvebox-Colors-Module --- */
 #window {
     background-color: @highlight_low;
     color: @gold;
@@ -206,7 +205,16 @@ tooltip {
     color: @base;
 }
 
-
+#mpris {
+    background-color: @iris;
+    color: @foam;
+    animation: repeat;
+	  animation-name: blink;
+	  animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 /* Specific Module */
 
 #tray > .passive {
@@ -273,16 +281,7 @@ tooltip label {
     }
 }
 
-#mpris {
-    background-color: @iris;
-    color: @base;
-animation: repeat;
-	animation-name: blink;
-	animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+
 
 @keyframes blink {
     to {
