@@ -18,14 +18,14 @@
 /* --- Global-Settings ---*/
 
 * {
-  font-family: 'JetBrainsMono Nerd Font Propo';
+  font-family: 'JetBrainsMono Nerd Font Propo', monospace;
   font-size: 12px;
   font-weight: bold;
   min-height: 0px;
-  }
+}
 
-  /* --- Waybar ---*/
-  window#waybar {
+/* --- Waybar ---*/
+window#waybar {
   background-color: transparent;
   transition-property: background-color;
   transition-duration: .5s;
@@ -47,8 +47,7 @@ window#waybar.empty #window {
 /* --- Tooltip ---*/
 tooltip {
   opacity: 1;
-
- }
+}
 
 /* --- Workspaces --- */
 #workspaces {
@@ -65,15 +64,14 @@ tooltip {
 }
 
 #workspaces button.active {
-    background-color: @gold;
-    color: @base;
+  background-color: @gold;
+  color: @base;
 }
 
 #workspaces button:hover {
-    background-color: @highlight_med;
-    color: @gold;
+  background-color: @highlight_med;
+  color: @gold;
 }
-
 
 /* --- General Modules --- */
 
@@ -114,7 +112,7 @@ tooltip {
 #custom-weather:hover,
 #custom-update:hover,
 #idle_inhibitor:hover,
-#custom-screenrecording-indicator,
+#custom-screenrecording-indicator:hover,
 #custom-updatespacman:hover,
 #network:hover,
 #pulseaudio:hover {
@@ -125,8 +123,8 @@ tooltip {
 }
 
 #window {
-    background-color: @highlight_low;
-    color: @gold;
+  background-color: @highlight_low;
+  color: @gold;
 }
 
 #custom-omarchy {
@@ -140,93 +138,93 @@ tooltip {
 }
 
 #clock {
-    background-color: @surface;
-    color: @gold;
+  background-color: @surface;
+  color: @gold;
 }
 #idle_inhibitor {
-    background-color: @muted;
-    color: @base;
+  background-color: @muted;
+  color: @base;
 }
 
 #idle_inhibitor.activated {
-    background-color: @foam;
-    color: @base;
+  background-color: @foam;
+  color: @base;
 }
 
 #idle_inhibitor.deactivated {
-    background-color: @muted;
-    color: @base;
+  background-color: @muted;
+  color: @base;
 }
 
 #custom-weather {
-    background-color: @overlay;
-    color: @foam;
+  background-color: @overlay;
+  color: @foam;
 }
 
 #tray {
-    background-color: @overlay;
-    color: @gold;
+  background-color: @overlay;
+  color: @gold;
 }
 
 #battery {
-    background-color: @foam;
-    color: @base;
+  background-color: @foam;
+  color: @base;
 }
 
 #cpu {
-    background-color: @gold;
-    color: @base;
+  background-color: @gold;
+  color: @base;
 }
 
 #memory {
-    background-color: @pine;
-    color: @base;
+  background-color: @pine;
+  color: @base;
 }
 
 #network {
-    background-color: @iris;
-    color: @base;
+  background-color: @iris;
+  color: @base;
 }
 
 #pulseaudio {
-    background-color: @love;
-    color: @base;
+  background-color: @love;
+  color: @base;
 }
 
 #backlight {
-    background-color: @rose;
-    color: @base;
+  background-color: @rose;
+  color: @base;
 }
 
 #bluetooth {
-       background-color: @foam;
-    color: @base;
+  background-color: @foam;
+  color: @base;
 }
 
 #mpris {
-    background-color: @iris;
-    color: @foam;
-    animation: repeat;
-	  animation-name: blink;
-	  animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: @iris;
+  color: @foam;
+  animation: repeat;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 #mpris.paused {
-    color: @text;
+  color: @text;
 }
 /* Specific Module */
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
-    color: @gold;
+  -gtk-icon-effect: dim;
+  color: @gold;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: @transparent;
-    color: @gold;
+  -gtk-icon-effect: highlight;
+  background-color: transparent;
+  color: @gold;
 }
 
 #tray * {
@@ -238,18 +236,16 @@ tooltip {
 }
 
 tooltip {
- padding: 4px;
- background-color: @surface;
- border: 1px solid @highlight_med;
- border-radius: 4px;
- font-size: 12px;
- 
+  padding: 4px;
+  background-color: @surface;
+  border: 1px solid @highlight_med;
+  border-radius: 4px;
+  font-size: 12px;
 }
 tooltip label {
-    color: @text;
-    font-weight: normal;
+  color: @text;
+  font-weight: normal;
 }
-
 
 /* --- Warnings --- */
 #cpu.critical,
@@ -257,8 +253,8 @@ tooltip label {
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-    background-color: @love;
-    color: @base;
+  background-color: @love;
+  color: @base;
 }
 
 /* Specific animation Module */
@@ -277,16 +273,13 @@ tooltip label {
 }
 
 @keyframes blink-recording {
-    to {
-        color: @surface;
-    }
+  to {
+    color: @surface;
+  }
 }
 
-
-
 @keyframes blink {
-    to {
-        color: @text;
-        
-    }
+  to {
+    color: @text;
+  }
 }
