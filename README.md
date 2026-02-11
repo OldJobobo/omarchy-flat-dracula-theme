@@ -44,6 +44,11 @@ Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
     <td align="center" valign="top"><img src="backgrounds/oldjobobo_flat_vector_throne_room_scene_background_solid_282A36_3f2c838f-7a0b-4b4e-8964-1d049aa7e985.png" alt="Throne Room Scene Background" width="180"><br><sub>oldjobobo_flat_vector_throne_room_scene_background_solid_282A36_3f2c838f-7a0b-4b4e-8964-1d049aa7e985.png</sub></td>
     <td align="center" valign="top"><img src="backgrounds/oldjobobo_stag_silohette_in_dense_dark_forest_at_night_tree_sil_45394349-ea7b-40ee-b31a-a0b51ccbaf4c.png" alt="Stag Silhouette In Dark Forest" width="180"><br><sub>oldjobobo_stag_silohette_in_dense_dark_forest_at_night_tree_sil_45394349-ea7b-40ee-b31a-a0b51ccbaf4c.png</sub></td>
   </tr>
+  <tr>
+    <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp-2.png" alt="Omarchy Dracula Wallp 2" width="180"><br><sub>Omarchy-Dracula-wallp-2.png</sub></td>
+    <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp-3.png" alt="Omarchy Dracula Wallp 3" width="180"><br><sub>Omarchy-Dracula-wallp-3.png</sub></td>
+    <td align="center" valign="top"><img src="backgrounds/1404615.jpg" alt="Wallpaper 1404615" width="180"><br><sub>1404615.jpg</sub></td>
+  </tr>
 </table>
 
 ## Notes
