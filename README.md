@@ -33,7 +33,7 @@ cp starship.toml ~/.config/starship.toml
 Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
 
 ## Background previews
-<table>
+<table cellpadding="10" cellspacing="12">
   <tr>
     <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp.png" alt="Omarchy Dracula Wallp" width="180"><br><sub>Omarchy-Dracula-wallp.png</sub></td>
     <td align="center" valign="top"><img src="backgrounds/bats-moon-ring.png" alt="Bats Moon Ring" width="180"><br><sub>bats-moon-ring.png</sub></td>
