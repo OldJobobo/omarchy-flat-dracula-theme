@@ -1,27 +1,113 @@
-    /**
-    * @name Omarchy
-    * @author @bypass_
-    * @version 0.1.0
-    * @description Match Omarchy system theme.
-    * @source https://github.com/imbypass/base16-Discord
-    **/
-    @import url("https://imbypass.github.io/base16-discord/omarchy-discord.theme.css");
+/**
+ * @name Dracula | based on midnight by refact0r
+ * @description A dark Dracula Theme for Discord
+ * @author Dracula
+ * @version 3.4
+ * @invite nz87hXyvcy
+ * @website https://draculatheme.com/
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+*/
 
-    :root {
-        --color00: #282a36;
-        --color01: #282a36;
-        --color02: #282a36;
-        --color03: #f8f8f2;
-        --color04: #ffffff;
-        --color05: #ffffff;
-        --color06: #ffffff;
-        --color07: #ffffff;
-        --color08: #ff5555;
-        --color09: #f1fa8c;
-        --color10: #ffffa5;
-        --color11: #50fa7b;
-        --color12: #8be9fd;
-        --color13: #bd93f9;
-        --color14: #ff79c6;
-        --color15: #f1fa8c;
-    }
+/*
+████████▄     ▄████████    ▄████████  ▄████████ ███    █▄   ▄█          ▄████████
+███   ▀███   ███    ███   ███    ███ ███    ███ ███    ███ ███         ███    ███
+███    ███   ███    ███   ███    ███ ███    █▀  ███    ███ ███         ███    ███
+███    ███  ▄███▄▄▄▄██▀   ███    ███ ███        ███    ███ ███         ███    ███
+███    ███ ▀▀███▀▀▀▀▀   ▀███████████ ███        ███    ███ ███       ▀███████████
+███    ███ ▀███████████   ███    ███ ███    █▄  ███    ███ ███         ███    ███
+███   ▄███   ███    ███   ███    ███ ███    ███ ███    ███ ███▌    ▄   ███    ███
+████████▀    ███    ███   ███    █▀  ████████▀  ████████▀  █████▄▄██   ███    █▀ 
+             ███    ███                                    ▀                     
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://raw.githubusercontent.com/CtorW/Vesktop-Discord/refs/heads/main/data/DracIcon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+    --background-image: off;
+    --background-image-url: url('');
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+    --custom-chatbar: aligned;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+    --small-user-panel: on;
+}
+
+:root {
+    --colors: on;
+    --text-0: #282A36;
+    --text-1: #F8F8F2;
+    --text-2: #8BE9FD;
+    --text-3: #F8F8F2;
+    --text-4: #6272A4;
+    --text-5: #6272A4;
+    --bg-1: #282A36;
+    --bg-2: #282A36;
+    --bg-3: #282A36;
+    --bg-4: #282A36;
+    --hover: #44475A;
+    --active: #44475A;
+    --active-2: #44475A;
+    --message-hover: #44475A;
+    --accent-1: #BD93F9;
+    --accent-2: #BD93F9;
+    --accent-3: #BD93F9;
+    --accent-4: #BD93F9;
+    --accent-5: #BD93F9;
+    --accent-new: #FF5555;
+    --mention: linear-gradient(to right, color-mix(in hsl, #BD93F9, transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, #BD93F9, transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, #F8F8F2, transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, #F8F8F2, transparent 95%) 40%, transparent);
+    --online: #50FA7B;
+    --dnd: #FF5555;
+    --idle: #F1FA8C;
+    --streaming: #BD93F9;
+    --offline: #6272A4;
+    --border-light: #44475A;
+    --border: #44475A;
+    --border-hover: #BD93F9;
+    --button-border: #44475A;
+    --red: #FF5555;
+    --orange: #FFB86C;
+    --yellow: #F1FA8C;
+    --green: #50FA7B;
+    --cyan: #8BE9FD;
+    --purple: #BD93F9;
+    --pink: #FF79C6;
+}
+
+/* Force sharp corners everywhere (override midnight defaults). */
+*,
+*::before,
+*::after {
+    border-radius: 0 !important;
+}
