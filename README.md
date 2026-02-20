@@ -2,18 +2,14 @@
 
 Flat take on the Dracula palette for a Hyprland-based Wayland setup and common CLI tools.
 
-sThis exists because I wanted an authentic Dracula experience on Omarchy: other attempts felt off-spec or busy, so I built a version that stays true to the palette while keeping distractions low. The goal is to make it easy to lock in for long sessions—high contrast where it matters, soft edges where it does not, and readability that stays gentle on the eyes.
+This exists because I wanted an authentic Dracula experience on Omarchy: other attempts felt off-spec or busy, so I built a version that stays true to the palette while keeping distractions low. The goal is to make it easy to lock in for long sessions—high contrast where it matters, soft edges where it does not, and readability that stays gentle on the eyes.
 
 ![Omarchy Flat Dracula Theme preview](preview.png)
 
 ## What’s included
-- Hyprland: dimmed inactive windows, zero borders, custom opacity rules (`hyprland.conf`)
-- Hyprlock colors for ring and text (`hyprlock.conf`)
-- Waybar styling with Iosevka and translucent bar (`waybar.css`)
-- Terminals: Alacritty (`alacritty.toml`) and Ghostty (`ghostty.conf`)
-- Shell/UI tools: Starship prompt (`starship.toml`), btop (`btop.theme`), Lazygit (`lazygit.yml`)
-- Notifications and helpers: Mako (`mako.ini`), SwayOSD (`swayosd.css`), Walker launcher (`walker.css`)
-- Neovim Dracula plugin + LazyVim colorscheme snippet (`neovim.lua`)
+- Neovim Official Dracula plugin
+- Vesktop/Vencord Official Dracula theme (modified to Omarchy sharp corners)
+- Alacritty/Ghostty/Kitty Official Dracula themes
 - Icon theme pointer for Yaru-purple (`icons.theme`)
 
 ## Quick start
@@ -27,7 +23,7 @@ Starship is optional—if you want this prompt, back up your existing file and r
 
 ```bash
 mv ~/.config/starship.toml ~/.config/starship.toml.bak
-cp starship.toml ~/.config/starship.toml
+cp ~/.config/omarchy/current/theme/starship.toml ~/.config/starship.toml
 ```
 
 Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
@@ -52,5 +48,4 @@ Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
 </table>
 
 ## Notes
-- Hyprland rules enforce full opacity on active windows and slight dimming on inactive ones; adjust `windowrule` lines if you want different defaults.
 - The palette follows https://spec.draculatheme.com across all configs for consistency.

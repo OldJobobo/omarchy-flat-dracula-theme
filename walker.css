@@ -6,7 +6,7 @@
 @define-color background #44475A;
 @define-color input #44475A;
 @define-color selected-box #44475A;
-@define-color selected-border #6272A4
+@define-color selected-border #6272A4;
 
 window {
    background-color: transparent;

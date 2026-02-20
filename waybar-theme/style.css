@@ -116,7 +116,7 @@ tooltip {
 #custom-weather:hover,
 #custom-update:hover,
 #idle_inhibitor:hover,
-#custom-screenrecording-indicator,
+#custom-screenrecording-indicator:hover,
 #custom-updatespacman:hover,
 #network:hover,
 #pulseaudio:hover {
@@ -208,8 +208,7 @@ tooltip {
 #mpris {
     background-color: @iris;
     color: @foam;
-    animation: repeat;
-	  animation-name: blink;
+		  animation-name: blink;
 	  animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -227,7 +226,7 @@ tooltip {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @transparent;
+    background-color: transparent;
     color: @gold;
 }
 
