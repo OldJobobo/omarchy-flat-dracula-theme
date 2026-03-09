@@ -29,23 +29,12 @@ cp ~/.config/omarchy/current/theme/starship.toml ~/.config/starship.toml
 Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
 
 ## Background previews
-<table>
-  <tr>
-    <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp.png" alt="Omarchy Dracula Wallp" width="180"><br><sub>Omarchy-Dracula-wallp.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/bats-moon-ring.png" alt="Bats Moon Ring" width="180"><br><sub>bats-moon-ring.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/cute-dracula.png" alt="Cute Dracula" width="180"><br><sub>cute-dracula.png</sub></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="backgrounds/oldjobobo_flat_vector_gothic_castle_on_a_cliff_solid_282A36_sky_a7cd0772-b8c2-4c00-bda6-10ed9dcb597f.png" alt="Gothic Castle On A Cliff" width="180"><br><sub>oldjobobo_flat_vector_gothic_castle_on_a_cliff_solid_282A36_sky_a7cd0772-b8c2-4c00-bda6-10ed9dcb597f.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/oldjobobo_flat_vector_throne_room_scene_background_solid_282A36_3f2c838f-7a0b-4b4e-8964-1d049aa7e985.png" alt="Throne Room Scene Background" width="180"><br><sub>oldjobobo_flat_vector_throne_room_scene_background_solid_282A36_3f2c838f-7a0b-4b4e-8964-1d049aa7e985.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/oldjobobo_stag_silohette_in_dense_dark_forest_at_night_tree_sil_45394349-ea7b-40ee-b31a-a0b51ccbaf4c.png" alt="Stag Silhouette In Dark Forest" width="180"><br><sub>oldjobobo_stag_silohette_in_dense_dark_forest_at_night_tree_sil_45394349-ea7b-40ee-b31a-a0b51ccbaf4c.png</sub></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp-2.png" alt="Omarchy Dracula Wallp 2" width="180"><br><sub>Omarchy-Dracula-wallp-2.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/Omarchy-Dracula-wallp-3.png" alt="Omarchy Dracula Wallp 3" width="180"><br><sub>Omarchy-Dracula-wallp-3.png</sub></td>
-    <td align="center" valign="top"><img src="backgrounds/1404615.jpg" alt="Wallpaper 1404615" width="180"><br><sub>1404615.jpg</sub></td>
-  </tr>
-</table>
+
+| | | |
+| --- | --- | --- |
+| ![](backgrounds/0-midnight-veil.jpg) | ![](backgrounds/1-ghost-ship.png) | ![](backgrounds/2-flat-dracula.png) |
+| ![](backgrounds/3-omarchy-neon.png) | ![](backgrounds/4-moon-bats.png) | ![](backgrounds/5-cute-count.png) |
+| ![](backgrounds/6-moonlit-castle.png) | ![](backgrounds/7-vampire-throne.png) | ![](backgrounds/8-nocturne-stag.png) |
 
 ## Notes
 - The palette follows https://spec.draculatheme.com across all configs for consistency.
