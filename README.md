@@ -9,7 +9,7 @@ This exists because I wanted an authentic Dracula experience on Omarchy: other a
 ## What’s included
 - Neovim Official Dracula plugin
 - Vesktop/Vencord Official Dracula theme (modified to Omarchy sharp corners)
-- Alacritty/Ghostty/Kitty Official Dracula themes
+- Base24 palette in `colors.toml`; Omarchy generates terminal colors
 - Icon theme pointer for Yaru-purple (`icons.theme`)
 
 ## Quick start
@@ -37,4 +37,5 @@ Wallpapers live in `backgrounds/`; `preview.png` shows the intended look.
 | ![](backgrounds/6-moonlit-castle.png) | ![](backgrounds/7-vampire-throne.png) | ![](backgrounds/8-nocturne-stag.png) |
 
 ## Notes
+- Terminal configs and Hyprland overrides are no longer bundled; Omarchy provides the defaults.
 - The palette follows https://spec.draculatheme.com across all configs for consistency.
