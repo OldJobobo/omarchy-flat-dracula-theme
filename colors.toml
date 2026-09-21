@@ -54,3 +54,33 @@ color15 = "#ffffff"
 # ░ ░ ░ ▒    ░ ░    ░ ░  ░     ░ ░ ░  ░ ░ ░ ▒   ░    ░ ░ ░ ░ ▒   ░    ░ ░ ░ ░ ▒  
 #     ░ ░      ░  ░   ░        ░   ░      ░ ░   ░          ░ ░   ░          ░ ░  
 #                   ░                                ░                ░          
+
+# Omarchy 4 semantic roles mapped from flat-dracula-base24.yaml.
+# Legacy ANSI color0 uses Dracula's Background Dark (base10);
+# Omarchy 4 derives generated color0 from bg (base00).
+mode = "dark"
+bg = "#282a36"
+lighter_bg = "#343746"
+selection = "#44475a"
+muted = "#6272a4"
+dark_fg = "#6272a4"
+fg = "#f8f8f2"
+light_fg = "#f8f8f2"
+bright_fg = "#ffffff"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+orange = "#ffb86c"
+brown = "#993333"
+dark_bg = "#21222c"
+darker_bg = "#191a21"
+bright_red = "#ff6e6e"
+bright_green = "#69ff94"
+bright_yellow = "#ffffa5"
+bright_blue = "#d6acff"
+bright_magenta = "#ff92df"
+bright_cyan = "#a4ffff"
+active_border_color = "#bd93f9"

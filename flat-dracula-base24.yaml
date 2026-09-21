@@ -1,0 +1,43 @@
+system: "base24"
+name: "Flat Dracula"
+slug: "flat-dracula"
+author: "Dracula Theme; Base24 mapping by OldJobobo; derived maroon from Tinted Theming"
+variant: "dark"
+
+# Official Dracula Classic colors and token names:
+# https://draculatheme.com/spec
+# This is a community Base24 mapping, not an official Dracula Base24 release.
+# base04 reuses Comment; base06 reuses Foreground intentionally.
+# Only base0F is noncanonical: Tinted's derived maroon, RGB(Red) * 0.6.
+# https://raw.githubusercontent.com/tinted-theming/schemes/spec-0.11/base24/dracula.yaml
+
+palette:
+  # --- Dracula Classic / neutral and UI colors ---
+  base00: "#282A36" # Background - default background
+  base01: "#343746" # Background Light - lighter background
+  base02: "#44475A" # Selection - selection background
+  base03: "#6272A4" # Comment - comments / muted text
+  base04: "#6272A4" # Comment - dark foreground (reused)
+  base05: "#F8F8F2" # Foreground - default foreground
+  base06: "#F8F8F2" # Foreground - light foreground (reused)
+  base07: "#FFFFFF" # AnsiBrightWhite - brightest foreground
+
+  # --- Dracula Classic / syntax colors ---
+  base08: "#FF5555" # Red - red / error
+  base09: "#FFB86C" # Orange - constants / numbers
+  base0A: "#F1FA8C" # Yellow - yellow
+  base0B: "#50FA7B" # Green - green
+  base0C: "#8BE9FD" # Cyan - cyan
+  base0D: "#BD93F9" # Purple - Base24 blue
+  base0E: "#FF79C6" # Pink - Base24 magenta / keywords
+  base0F: "#993333" # Derived Maroon (Tinted; noncanonical) - brown / special
+
+  # --- base24 extension ---
+  base10: "#21222C" # Background Dark - darker background
+  base11: "#191A21" # Background Darker - darkest background
+  base12: "#FF6E6E" # AnsiBrightRed - bright red
+  base13: "#FFFFA5" # AnsiBrightYellow - bright yellow
+  base14: "#69FF94" # AnsiBrightGreen - bright green
+  base15: "#A4FFFF" # AnsiBrightCyan - bright cyan
+  base16: "#D6ACFF" # AnsiBrightBlue - bright blue
+  base17: "#FF92DF" # AnsiBrightMagenta - bright magenta
